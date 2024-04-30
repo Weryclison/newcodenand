@@ -1,0 +1,154 @@
+#header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--escuro);
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  background-color: var(--branco);
+}
+.flex-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#menu {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+#menu a {
+  display: block;
+  transition: color 0.2s;
+}
+
+#btn-mobile {
+  display: none;
+}
+.menu-active {
+  overflow: hidden;
+}
+.menu-active::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+#header .botao-hidden {
+  display: none;
+}
+#header .redes-animation {
+  display: none;
+}
+#menu > li:nth-child(3) {
+  display: none;
+}
+@media (max-width: 960px) {
+  #header .redes-animation {
+    display: block;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 120px;
+  }
+  #menu > li:nth-child(3) {
+    display: block;
+  }
+  #btn-mobile {
+    display: block;
+  }
+  #header .botao {
+    display: none;
+  }
+  #header .botao-hidden {
+    display: block;
+    width: max-content;
+    justify-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+
+  #menu {
+    margin-top: 50px;
+    padding-top: 20vh;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    height: 0px;
+    transition: 0.3s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+    background-color: var(--branco);
+    border-left: 2px solid var(--escuro);
+  }
+  #menu li {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--escuro);
+  }
+  #menu li a {
+    color: var(--escuro) !important;
+  }
+  #menu li a:hover {
+    color: var(--cinza) !important;
+  }
+
+  #nav.active #menu {
+    height: 100vh;
+    visibility: visible;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 4px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 10px;
+  }
+  #hamburguer {
+    border-top: 4px solid var(--escuro);
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: var(--escuro);
+    display: block;
+    transition: 0.3s;
+    margin-top: 4px;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    display: block;
+    border-top: 4px solid var(--escuro);
+    width: 30px;
+    z-index: 9999;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -8px;
+  }
+}
+#header .redes-animation ul svg {
+  fill: var(--escuro);
+}

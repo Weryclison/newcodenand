@@ -1,0 +1,70 @@
+.font-1-a {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 110%;
+}
+.font-1-b {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.font-1-c {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.font-1-d {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.font-1-e {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 160%;
+}
+.font-1-f {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  font-variant-caps: small-caps;
+}
+
+@media (max-width: 900px) {
+  .font-1-a {
+    font-size: 4rem;
+  }
+  .font-1-d {
+    font-size: 0.875rem;
+  }
+  .font-1-e {
+    font-size: 1rem;
+  }
+}
+
+:root {
+  --branco: #f7fafc;
+  --cinza: #a9bac7;
+  --cinza-2: #e9eef2;
+  --escuro: #0f1a33;
+  --escuro-2: #374a73;
+}
+.branco {
+  color: var(--branco);
+}
+.cinza {
+  color: var(--cinza);
+}
+.cinza-2 {
+  color: var(--cinza-2);
+}
+.escuro {
+  color: var(--escuro);
+}
+.escuro-2 {
+  color: var(--escuro-2);
+}

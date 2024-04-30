@@ -1,0 +1,114 @@
+.redes-animation ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.redes-animation ul img {
+  max-width: 50px;
+}
+.redes-animation ul li {
+  list-style: none;
+}
+
+.redes-animation ul li a {
+  padding: 10px;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: var(--branco);
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+.redes-animation ul li a span {
+  position: absolute;
+  transition: transform 0.5s;
+}
+.redes-animation ul li a span:nth-child(1),
+.redes-animation ul li a span:nth-child(3) {
+  width: 100%;
+  height: 2px;
+  background: var(--branco);
+}
+#header .redes-animation ul li a span:nth-child(1),
+#header .redes-animation ul li a span:nth-child(3) {
+  background: var(--escuro);
+}
+.redes-animation ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+.redes-animation ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.redes-animation ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+.redes-animation ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+/* aaaaaaaaaaaaaaaaaaaa */
+
+.redes-animation ul li a span:nth-child(2),
+.redes-animation ul li a span:nth-child(4) {
+  width: 2px;
+  height: 100%;
+  background: var(--branco);
+}
+#header .redes-animation ul li a span:nth-child(2),
+#header .redes-animation ul li a span:nth-child(4) {
+  background: var(--escuro);
+}
+.redes-animation ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.redes-animation ul li a:hover span:nth-child(2) {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+.redes-animation ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.redes-animation ul li a:hover span:nth-child(4) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+@media (max-width: 430px) {
+  .redes-animation ul {
+    display: flex;
+    gap: 5vw;
+  }
+  .redes-animation ul img {
+    max-width: 30px;
+  }
+  .redes-animation ul li a {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 300px) {
+  #logo {
+    max-width: 40vw;
+  }
+  .redes-animation ul img {
+    max-width: 20px;
+  }
+}

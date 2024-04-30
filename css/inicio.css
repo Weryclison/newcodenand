@@ -1,0 +1,18 @@
+.inicio {
+  padding-top: 150px;
+  text-align: center;
+}
+.inicio h1 {
+  margin-bottom: 4px;
+}
+.inicio .botao {
+  margin-top: 20px;
+}
+@media (max-width: 900px) {
+  .inicio {
+    padding-top: 120px;
+  }
+  .inicio h1 {
+    margin-bottom: 20px;
+  }
+}
