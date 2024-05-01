@@ -7,7 +7,9 @@
 @import url(./css/inicio.css);
 @import url(./css/especialidades.css);
 @import url(./css/diferenciais.css);
-@import url(./css/portfolio.css);
+@import url(./css/portfolio-home.css);
 @import url(./css/sobre.css);
 @import url(./css/redes-sociais-animation.css);
 @import url(./css/footer.css);
+/* portfolio */
+@import url(./css/portfolio.css);

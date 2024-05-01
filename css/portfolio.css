@@ -1,43 +1,26 @@
-.portfolio {
-  text-align: center;
+#port {
+  padding-top: 150px;
 }
-.grid-portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+#port p {
+  max-width: 60ch;
+  margin-top: 20px;
 }
-.caixa-img-portfolio {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  height: 400px;
+#central {
+  display: flex;
+  justify-content: center;
 }
-.imagem-port:hover {
-  transition: all 5s ease-in-out;
-  transform: translateY(calc(-100% + 400px));
+.info-port {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: space-between;
 }
-.imagem-port {
-  transition: all 5s ease-in-out;
+.botao-port {
+  min-width: max-content;
+  margin-left: 12px;
 }
-.caixa-portfolio {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
 @media (max-width: 900px) {
-  .grid-portfolio {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-  }
-  .caixa-portfolio {
-    justify-self: center;
-  }
-  .caixa-img-portfolio {
-    height: 300px;
-  }
-  .imagem-port:hover {
-    transition: none;
-    transform: none;
+  #port {
+    padding-top: 120px;
   }
 }
