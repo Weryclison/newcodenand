@@ -14,7 +14,6 @@
 }
 #menu {
   display: flex;
-  gap: 60px;
   align-items: center;
 }
 #menu a {
@@ -44,10 +43,21 @@
 #header .redes-animation {
   display: none;
 }
-#menu > li:nth-child(3) {
+.hiden-he {
   display: none;
 }
+.gap-header {
+  display: flex;
+  gap: 60px;
+}
+
 @media (max-width: 960px) {
+  .gap-header {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
   #header .redes-animation {
     display: block;
     width: fit-content;
@@ -56,7 +66,7 @@
     transform: translate(-50%);
     margin-top: 120px;
   }
-  #menu > li:nth-child(3) {
+  .hiden-he {
     display: block;
   }
   #btn-mobile {

@@ -34,8 +34,4 @@
   .caixa-img-portfolio {
     height: 300px;
   }
-  .imagem-port:hover {
-    transition: none;
-    transform: none;
-  }
 }
