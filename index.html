@@ -5,30 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codenand - Criação de sites</title>
+  <meta name="description" content="Web designer especializado em criação de sites profissionais. Oferecemos serviços de criação de sites, otimização de sites e SEO estratégico para garantir que sua página seja facilmente encontrada na web.">
+  <meta itemprop="name" content="Criação de Sites Profissionais | Codenand | Web Designer">
+  <meta itemprop="description" content="Web designer especializado em criação de sites profissionais. Oferecemos serviços de criação de sites, otimização de sites e SEO estratégico para garantir que sua página seja facilmente encontrada na web.">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="svg/Vector.svg" type="image/x-icon">
 </head>
 
 <body>
   <header id="header">
     <div class="container flex-menu">
-      <a id="logo" href="index.html"><img src="./svg/logo.svg" alt="logo-emma"></a>
+      <a id="logo" href="index.html"><img src="./svg/logo.svg" alt="logo-codenand"></a>
       <nav id="nav">
         <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
           <span id="hamburguer"></span>
         </button>
         <ul id="menu">
-          <li class="font-1-d escuro"><a href="index.html" class="interno">Home</a></li>
-          <li class="font-1-e escuro"><a href="portfolio.html" class="interno" style="color: var(--cinza);">Portfólio</a></li>
-          <li class="font-1-d escuro"><a href="index.html" class="interno">Serviços</a></li>
-          <li class="botao botao-hidden"><a href="#">Peça um orçamento</a></li>
+          <li class="font-1-d escuro"><a href="index.html">Home</a></li>
+          <li class="font-1-e escuro"><a href="portfolio.html" style="color: var(--cinza);">Portfólio</a></li>
+          <li class="font-1-d escuro"><a href="#servicos" class="interno">Serviços</a></li>
+          <li class="botao botao-hidden"><a href="https://wa.me/5548996561838">Peça um orçamento</a></li>
           <li>
             <div class="redes-animation">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/codenandi/">
 
                     <span></span>
                     <span></span>
@@ -41,7 +45,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://wa.me/5548996561838">
 
                     <span></span>
                     <span></span>
@@ -54,7 +58,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/weryclison-nandi/">
 
                     <span></span>
                     <span></span>
@@ -67,7 +71,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.behance.net/weryclidesouz">
 
                     <span></span>
                     <span></span>
@@ -98,7 +102,7 @@
     <a href="https://wa.me/5548996561838" class="botao">Entrar em contato</a>
     <div class="linha"></div>
   </section>
-  <section class="especialidades container">
+  <section class="especialidades container" id="servicos">
     <h2 class="font-1-f escuro-2">MINHAS ESPECIALIDADES</h2>
     <h3 class="font-1-b escuro">O que faço?</h3>
     <div class="especialidades-grid">
@@ -108,12 +112,12 @@
         <p class="font-1-e escuro-2">Desenvolvimento de sites personalidades para atender meus clientes da melhor forma</p>
       </div>
       <div class="caixa-especialidade">
-        <img src="./svg/icon-otimizacao.svg" alt="criação de sites icon">
+        <img src="./svg/icon-otimizacao.svg" alt="otimização de sites icon">
         <h4 class="font-1-d escuro">Otimização de sites</h4>
         <p class="font-1-e escuro-2">Melhoria no desempenha e velocidade de carregamento de sua página na web</p>
       </div>
       <div class="caixa-especialidade">
-        <img src="./svg/icon-seo.svg" alt="criação de sites icon">
+        <img src="./svg/icon-seo.svg" alt="seo de sites icon">
         <h4 class="font-1-d escuro">Seo estratégico</h4>
         <p class="font-1-e escuro-2">Criação de seo analítico para que sua página seja facilmente encontrada na web</p>
       </div>
@@ -159,16 +163,16 @@
     <h3 class="font-1-b escuro">Meu portfólio</h3>
     <div class="grid-portfolio">
       <div class="caixa-portfolio">
-        <img src="./svg/cabeçario-portfolio.svg" class="cabecario-port">
+        <img src="./svg/cabeçario-portfolio.svg" alt="cabeçario" class="cabecario-port">
         <div class="caixa-img-portfolio" id="caixa-portfolio">
-          <img src="img/site-emma.jpg" class="imagem-port">
+          <img src="img/site-emma.jpg" alt="site-emma-foto" class="imagem-port">
         </div>
       </div>
 
       <div class="caixa-portfolio">
-        <img src="./svg/cabeçario-portfolio.svg" class="cabecario-port">
+        <img src="./svg/cabeçario-portfolio.svg" alt="cabeçario" class="cabecario-port">
         <div class="caixa-img-portfolio" id="caixa-portfolio">
-          <img src="img/site-marina.jpg" class="imagem-port">
+          <img src="img/site-marina.jpg" alt="site-marina-foto" class="imagem-port">
         </div>
       </div>
 
@@ -188,61 +192,64 @@
       <p class="font-1-e escuro">Por isso, me dedico a aprimorar minhas habilidades, sempre buscando criar experiências para o usuário que sejam não apenas funcionais, mas também envolventes e memoráveis. </p>
     </div>
     <div class="sobre-imagem">
-      <img src="img/weryclison.png" alt="">
+      <img src="img/weryclison.png" alt="weryclison-foto">
     </div>
   </section>
-  <footer class="footer container">
-    <h3 class="font-1-b branco">Vamos trabalhar juntos</h3>
-    <p class="font-1-e cinza-2">Precisa de um site pra você ou sua empresa? Fale comigo.</p>
-    <a href="https://wa.me/5548996561838" class="botao">WhatsApp</a>
-    <div class="redes-animation">
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/codenandi/">
+  <footer>
+    <div class="footer container">
+      <h3 class="font-1-b branco">Vamos trabalhar juntos</h3>
+      <p class="font-1-e cinza-2">Precisa de um site pra você ou sua empresa? Fale comigo.</p>
+      <a href="https://wa.me/5548996561838" class="botao">WhatsApp</a>
+      <div class="redes-animation">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/codenandi/">
 
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="./svg/icon-instagram.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="https://wa.me/5548996561838">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <img src="./svg/icon-instagram.svg" alt="icon-instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5548996561838">
 
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="./svg/icon-whatsapp.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/weryclison-nandi/">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <img src="./svg/icon-whatsapp.svg" alt="icon-whatsapp">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/weryclison-nandi/">
 
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="./svg/icon-linkedin.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.behance.net/weryclidesouz">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <img src="./svg/icon-linkedin.svg" alt="icon-linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/weryclidesouz">
 
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <img src="./svg/icon-behance.svg" alt="">
-          </a>
-        </li>
-      </ul>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <img src="./svg/icon-behance.svg" alt="icon-behance">
+            </a>
+          </li>
+        </ul>
 
+      </div>
+      <p class="font-1-e branco rodape">Codenand - Criação de sites</p>
     </div>
-    <p class="font-1-e branco rodape">Codenand - Criação de sites</p>
+
   </footer>
-  <script type="module" src="script.js"></script>
+  <script src="js/menu-mobile.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,7 @@
-.footer {
+footer {
   background-color: var(--escuro);
+}
+.footer {
   text-align: center;
   display: grid;
 }
